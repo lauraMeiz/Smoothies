@@ -1,0 +1,23 @@
+header {
+  width: 1000px;
+  margin: 0 calc(50% - 200px);
+  flex-direction: row;
+}
+.container {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.container-left {
+  width: 300px;
+  display: flex;
+  margin: 0 calc(50% - 200px);
+  flex-direction: column;
+}
+
+.container-right {
+  display: flex;
+  width: 700px;
+  margin: 0 calc(50% - 300px);
+  flex-direction: column;
+}
