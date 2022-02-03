@@ -56,6 +56,14 @@ nav > .main-nav {
   flex-direction: column;
   gap: 15px;
 }
+.left-column ol::before {
+  content: "+";
+  position: absolute;
+  width: 20px;
+  transform: translate(-70%, -5%);
+  color: var(--primary-color);
+}
+
 .a > img {
   display: flex;
 
