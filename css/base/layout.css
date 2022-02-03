@@ -1,23 +1,61 @@
 header {
   width: 1000px;
-  margin: 0 calc(50% - 200px);
+  margin: 0 calc(50% - 500px);
+  display: flex;
   flex-direction: row;
+  padding: 40px 0;
+}
+
+.logo {
+  display: flex;
+  width: 200px;
+  object-fit: contain;
+  object-position: left;
+}
+
+nav > .main-nav {
+  display: flex;
+  width: 800px;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.main-nav > a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.main-nav > a:nth-of-type(4) {
+  width: 50px;
+  text-align: right;
+}
+.main-nav > a:nth-of-type(5) {
+  width: 50px;
 }
 .container {
-  width: 100%;
-  padding: 60px 0;
+  display: flex;
+  width: 1000px;
+  margin: 0 calc(50% - 500px);
+  flex-direction: row;
+  gap: 70px;
 }
 
 .container-left {
-  width: 300px;
+  width: 40%;
   display: flex;
-  margin: 0 calc(50% - 200px);
+  justify-content: flex-start;
   flex-direction: column;
 }
 
 .container-right {
+  width: 60%;
   display: flex;
-  width: 700px;
-  margin: 0 calc(50% - 300px);
+  justify-content: flex-start;
   flex-direction: column;
+}
+.a > img {
+  width: 40px;
+  height: 40px;
 }
