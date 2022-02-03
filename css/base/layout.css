@@ -60,8 +60,11 @@ nav > .main-nav {
   content: "+";
   position: absolute;
   width: 20px;
-  transform: translate(-70%, -5%);
   color: var(--primary-color);
+  transform: translate(-70%, -5%);
+}
+.left-column ol {
+  margin: 15px;
 }
 
 .a > img {
