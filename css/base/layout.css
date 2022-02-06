@@ -3,7 +3,8 @@ header {
   margin: 0 calc(50% - 500px);
   display: flex;
   flex-direction: row;
-  padding: 40px 0;
+  padding: 60px 0;
+  bottom: 0;
 }
 
 .logo {
@@ -40,40 +41,39 @@ nav > .main-nav {
   margin: 0 calc(50% - 500px);
   flex-direction: row;
   gap: 70px;
+  position: absolute;
 }
 
 .container-left {
-  width: 40%;
+  width: 55%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  position: relative;
 }
 
 .container-right {
-  width: 60%;
+  width: 45%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   gap: 15px;
-}
-.left-column ol::before {
-  content: "+";
-  position: absolute;
-  width: 20px;
-  color: var(--primary-color);
-  transform: translate(-70%, -5%);
-}
-.left-column ol {
-  margin: 15px;
+  margin-top: 40px;
 }
 
-.a > img {
-  display: flex;
+@media (max-width: 1100px) {
+  .content {
+    width: 900px;
+    margin: 0 calc(50% - 450px);
+  }
+}
 
-  top: 25%;
-  left: 25%;
-  position: relative;
-  justify-items: center;
-  width: 30px;
-  height: 30px;
+@media (max-width: 900px) {
+  .content {
+    width: 700px;
+    margin: 0 calc(50% - 350px);
+  }
+  img {
+    width: 50%;
+  }
 }

@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./css/pages/home.css" />
   </head>
   <body>
-    <header>
+    <header class="content">
       <div class="logo">
         <img src="./img/logo.png" alt="" />
       </div>
 
       <nav>
-        <div class="main-nav">
+        <div class="main-nav content">
           <a href="#">Home</a>
           <a href="#">Smoothies</a>
           <a href="#">Contact Us</a>
@@ -23,13 +23,18 @@
         </div>
       </nav>
     </header>
-    <main class="container">
+    <main class="container content">
       <div class="container-left">
-        <div class="switch-left"></div>
-        <div class="switch-right"></div>
+        <div class="switch-left">
+          <div class="fleshLeft"></div>
+        </div>
+        <div class="switch-right">
+          <div class="fleshRight"></div>
+        </div>
         <img src="./img/left img.png" alt="" />
       </div>
-      <div class="container-right">
+
+      <div class="container-right content">
         <h3>Berries</h3>
         <h1>Strawberry rush</h1>
         <p>The best blend of strawberries and milberries</p>
@@ -57,6 +62,11 @@
               <div class="a"><img src="./img/juoda.png" alt="uoga" /></div>
             </div>
           </div>
+        </div>
+        <div class="button">
+          <button class="addcart" id="book1" onclick="addToCart">
+            Add to cart
+          </button>
         </div>
       </div>
     </main>
