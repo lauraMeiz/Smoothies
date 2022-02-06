@@ -73,7 +73,81 @@ nav > .main-nav {
     width: 700px;
     margin: 0 calc(50% - 350px);
   }
-  img {
-    width: 50%;
+  @media (max-width: 900px) {
+    nav > .main-nav {
+      width: 700px;
+      margin: 0 calc(30% - 350px);
+    }
   }
+  @media (max-width: 700px) {
+    .content > .logo {
+      width: 700px;
+      margin: 0 calc(20% - 75px);
+      justify-content: center;
+      display: flex;
+    }
+  }
+  @media (max-width: 700px) {
+    nav > .main-nav {
+      width: 450px;
+      margin: 0 calc(50% - 225px);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: 440px) {
+  .content {
+    width: 800px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .container > .container-right > p {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+  }
+  .container > .container-right > h1 {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container > .container-right > h3 {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+.columns {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.button {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 60px;
+}
+.button > .addcart {
+  font-size: 20px;
 }
