@@ -30,7 +30,7 @@
 }
 
 .columns {
-  width: 700px;
+  width: 600px;
   display: flex;
   flex-direction: row;
   gap: 50px;
