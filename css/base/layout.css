@@ -134,20 +134,21 @@ nav > .main-nav {
     justify-content: center;
     padding: 20px;
   }
-}
-.columns {
-  width: 800px;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-.button {
-  width: 800px;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  font-size: 60px;
-}
-.button > .addcart {
-  font-size: 20px;
+
+  .columns {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .button {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 60px;
+  }
+  .button > .addcart {
+    font-size: 20px;
+  }
 }
