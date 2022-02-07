@@ -1,5 +1,7 @@
 @import "../base/base.css";
 @import "../base/layout.css";
+@import "../3rd-party/font-awesome.min.css";
+
 /*
 .container-left > .switch-left {
   width: 60px;
@@ -17,7 +19,6 @@
   color: white;
 }
 */
-
 .a > img {
   display: flex;
 
@@ -75,6 +76,7 @@
   border-radius: 40px;
 }
 
+/*
 .container > .container-left > .switch-right,
 .switch-left {
   background-color: var(--primary-color);
@@ -96,11 +98,43 @@
   transform: rotate(45deg);
   display: flex;
 }
+*/
+
+.container-left {
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+}
 
 .container > .container-left > img {
   width: 100%;
 }
 
+.container-left > .fa {
+  position: absolute;
+  top: 48.5%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.container-left > .fa.fa-angle-left {
+  left: 0;
+  transform: translateX(10%);
+}
+.container-left > .fa.fa-angle-right {
+  right: 0;
+  transform: translateX(-10%);
+}
+
+/*
 .fleshRight {
   width: 11px;
   border-right: 2px solid white;
@@ -123,7 +157,7 @@
   right: 15px;
   top: 231px;
 }
-
+*/
 .left-column ol::before {
   content: "+";
   font-size: 30px;

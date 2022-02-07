@@ -21,11 +21,16 @@ nav > .main-nav {
   justify-content: flex-end;
   gap: 30px;
 }
-
-.main-nav > a {
+.main-nav a {
   text-decoration: none;
   font-weight: bolder;
   color: black;
+}
+
+.main-nav > .icon {
+  text-decoration: none;
+
+  color: grey;
 }
 
 .main-nav > a:nth-of-type(4) {
