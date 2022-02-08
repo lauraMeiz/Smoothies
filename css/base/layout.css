@@ -71,6 +71,9 @@ nav > .main-nav {
     width: 900px;
     margin: 0 calc(50% - 450px);
   }
+  .content.hamburger {
+    display: none;
+  }
 
   .container > .container-left {
     width: 65%;
@@ -169,13 +172,12 @@ nav > .main-nav {
   .container > .container-left > .galery {
     width: 100%;
     padding-bottom: 40px;
-    
-    
-    
+  }
 }
 
 @media (max-width: 440px) {
   .content {
+    display: fixed;
     width: 650px;
     margin: 0;
     flex-direction: row;
@@ -184,16 +186,22 @@ nav > .main-nav {
     gap: 30px;
     font-size: 20px;
   }
-}
-@media (max-width: 440px) {
-  .container {
-    width: 650px;
-    margin: 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
-    font-size: 20px;
+
+  .menu {
+    display: flex;
+    width: 300px;
+    background-color: red;
   }
+  .hamburger {
+    color: black;
+    font-size: 40px;
+    display: visible;
+  }
+
+  nav > .main-nav {
+    display: none;
+  }
+
   .container > .container-left > .galery img {
     width: 100%;
   }

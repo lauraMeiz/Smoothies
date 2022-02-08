@@ -2,23 +2,6 @@
 @import "../base/layout.css";
 @import "../3rd-party/font-awesome.min.css";
 
-/*
-.container-left > .switch-left {
-  width: 60px;
-  height: 60px;
-  border: 5px solid var(--primary-color);
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  text-align: center;
-  line-height: 50px;
-  font-size: 50px;
-
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  color: white;
-}
-*/
 .a > img {
   display: flex;
 
@@ -76,30 +59,6 @@
   border-radius: 40px;
 }
 
-/*
-.container > .container-left > .switch-right,
-.switch-left {
-  background-color: var(--primary-color);
-  width: 42px;
-  padding-top: 12px;
-  padding-left: 14px;
-  padding-bottom: 12px;
-  border: 1px solid var(--primary-color);
-  border-radius: 53%;
-  color: white;
-  display: flex;
-}
-
-.fleshLeft {
-  width: 11px;
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
-  padding-bottom: 10px;
-  transform: rotate(45deg);
-  display: flex;
-}
-*/
-
 .container-left {
   width: 65%;
   display: flex;
@@ -134,30 +93,6 @@
   transform: translateX(-18%);
 }
 
-/*
-.fleshRight {
-  width: 11px;
-  border-right: 2px solid white;
-  border-top: 2px solid white;
-  padding-bottom: 10px;
-  transform: rotate(45deg);
-  display: flex;
-}
-
-.container > .container-left > .switch-left {
-  display: flex;
-  position: absolute;
-  left: 20px;
-  top: 245px;
-  transform: translate(-30%, -30%);
-}
-.container > .container-left > .switch-right {
-  display: flex;
-  position: absolute;
-  right: 15px;
-  top: 231px;
-}
-*/
 .left-column ol::before {
   content: "+";
   font-size: 30px;
