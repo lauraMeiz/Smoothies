@@ -71,6 +71,14 @@ nav > .main-nav {
     width: 900px;
     margin: 0 calc(50% - 450px);
   }
+
+  .container > .container-left {
+    width: 65%;
+  }
+
+  .container > .container-right {
+    width: 35%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -78,30 +86,94 @@ nav > .main-nav {
     width: 700px;
     margin: 0 calc(50% - 350px);
   }
-  @media (max-width: 900px) {
-    nav > .main-nav {
-      width: 700px;
-      margin: 0 calc(30% - 350px);
-    }
+
+  nav > .main-nav {
+    width: 700px;
+    margin: 0 calc(30% - 350px);
   }
-  @media (max-width: 700px) {
-    .content > .logo {
-      width: 700px;
-      margin: 0 calc(20% - 75px);
-      justify-content: center;
-      display: flex;
-    }
+
+  .content > .logo {
+    width: 700px;
+    justify-content: center;
+    display: flex;
   }
-  @media (max-width: 700px) {
-    nav > .main-nav {
-      width: 450px;
-      margin: 0 calc(50% - 225px);
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+
+  .container {
+    width: 700px;
+    gap: 0;
+    margin: 0 calc(50% - 350px);
+  }
+  .container-right > .columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container-right > .columns {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .container > .container-right > h1 {
+    font-size: 20px;
+  }
+  .container > .container-right h4 {
+    font-size: 13px;
+  }
+
+  .container > .container-left {
+    padding-top: 55px;
+    width: 75%;
+  }
+
+  .container > .container-right {
+    width: 35%;
+  }
+
+  .container > .container-left > .galery img {
+    width: 100%;
   }
 }
+
+@media (max-width: 700px) {
+  .content {
+    width: 500px;
+    margin: 0 calc(50% - 250px);
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .container {
+    width: 500px;
+    margin: 0 calc(50% - 250px);
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+  .container > .container-left {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+  }
+
+  .container > .container-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+  }
+  .container > .container-left > .galery {
+    width: 100%;
+    padding-bottom: 40px;
+    
+    
+    
+}
+
 @media (max-width: 440px) {
   .content {
     width: 650px;
@@ -121,6 +193,9 @@ nav > .main-nav {
     flex-wrap: wrap;
     padding: 20px;
     font-size: 20px;
+  }
+  .container > .container-left > .galery img {
+    width: 100%;
   }
   .container > .container-right > p {
     width: 650px;

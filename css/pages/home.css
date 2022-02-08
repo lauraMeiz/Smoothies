@@ -108,11 +108,11 @@
   position: relative;
 }
 
-.container > .container-left > img {
+.container > .container-left > .galery {
   width: 100%;
 }
 
-.container-left > .fa {
+.container-left > .galery > .fa {
   position: absolute;
   top: 48.5%;
   transform: translateY(-50%);
@@ -125,13 +125,13 @@
   color: white;
   font-size: 30px;
 }
-.container-left > .fa.fa-angle-left {
+.container-left > .galery > .fa.fa-angle-left {
   left: 0;
-  transform: translateX(10%);
+  transform: translateX(18%);
 }
-.container-left > .fa.fa-angle-right {
+.container-left > .galery > .fa.fa-angle-right {
   right: 0;
-  transform: translateX(-10%);
+  transform: translateX(-18%);
 }
 
 /*
