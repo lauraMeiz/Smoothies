@@ -189,7 +189,14 @@ nav > .main-nav {
 
   .menu {
     display: flex;
-    width: 300px;
+    width: 100%;
+    padding-top: 0;
+    background-color: red;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    text-align: center;
     background-color: red;
   }
   .hamburger {
