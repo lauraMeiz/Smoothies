@@ -50,6 +50,11 @@
 .img {
   padding-top: 30px;
 }
+.right-column {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
 .right-column > .img > .a {
   display: flex;
   width: 60px;
@@ -115,4 +120,9 @@
   background-color: var(--primary-color);
   color: white;
   font-weight: bold;
+}
+.button {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: start;
 }

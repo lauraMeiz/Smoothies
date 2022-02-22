@@ -33,6 +33,10 @@ nav > .main-nav {
   color: grey;
 }
 
+.content .hamburger {
+  display: none;
+}
+
 .main-nav > a:nth-of-type(4) {
   width: 50px;
   text-align: right;
@@ -70,9 +74,6 @@ nav > .main-nav {
   .content {
     width: 900px;
     margin: 0 calc(50% - 450px);
-  }
-  .content.hamburger {
-    display: none;
   }
 
   .container > .container-left {
@@ -189,9 +190,9 @@ nav > .main-nav {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .main-nav .hamburger {
+  .content .hamburger {
     color: black;
-    font-size: 60px;
+    font-size: 20px;
     display: visible;
     display: inline-block;
   }
