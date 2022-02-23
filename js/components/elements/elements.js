@@ -7,6 +7,8 @@
  * @returns {[boolean, string]} Funkcijos veikimo statusas `[error, message]`
  */
 
+import { elementsData } from "../../data/elementsData.js";
+
 function elements(selector, data) {
   if (typeof selector !== "string" || selector === "") {
     return [true, "Selector has to be a not-empty string"];
@@ -18,39 +20,18 @@ function elements(selector, data) {
     return [true, "Data has to be a non-empty array"];
   }
   const elementsDOM = document.querySelector(selector);
+
   if (!elementsDOM) {
     return [true, "Could not found DOM element based on given selector"];
   }
-  console.log(elementsDOM);
-  let HTML = "";
-  for (const element of data) {
-    if (
-      typeof element !== "object" ||
-      element === null ||
-      Array.isArray(element) ||
-      !element.ul
-    ) {
-      continue;
-    }
-    HTML += `<h4>Nutritional benefits</h4>
 
-    <ul>
-      <ol>
-        ${element.ul[0]}
-      </ol>
-      <ul>
-      <ul>
-      <ol>
-        ${element.ul[1]}
-      </ol>
-      <ul>
-      <ul>
-      <ol>
-        ${element.ul[2]}
-      </ol>
-      <ul>
-      `;
+  let HTML = "";
+  console.log(elementsData);
+  HTML += `<h4>Nutritional benefits</h4>`;
+  for (const element of elementsData[0].ul) {
+    HTML += `<p class=el>${element}</p>`;
   }
+
   elementsDOM.innerHTML = HTML;
   return true;
 }

@@ -23,6 +23,7 @@ function images(selector, data) {
     return [true, "Could not found DOM element based on given selector"];
   }
   let HTML = "";
+  HTML += `<h4 class="ro">Content</h4>`;
   for (const image of data) {
     if (
       typeof image !== "object" ||
@@ -35,7 +36,7 @@ function images(selector, data) {
     }
 
     HTML += `
-    <div class="img">
+    <div class="img roo">
     <div class="a"><img src="./img/${image.img}" alt="${image.alt}" /></div>
     </div>
   `;

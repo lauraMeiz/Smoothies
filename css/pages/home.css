@@ -50,11 +50,20 @@
 .img {
   padding-top: 30px;
 }
+
 .right-column {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "ro ro ro"
+    "roo roo roo";
   gap: 15px;
 }
+.right-column .ro {
+  grid-area: ro;
+  padding-bottom: 0;
+}
+
 .right-column > .img > .a {
   display: flex;
   width: 60px;
@@ -98,7 +107,7 @@
   transform: translateX(-18%);
 }
 
-.left-column ol::before {
+.left-column .el::before {
   content: "+";
   font-size: 30px;
   position: absolute;
@@ -106,8 +115,8 @@
   color: var(--primary-color);
   transform: translate(-75%, -25%);
 }
-.left-column ol {
-  margin: 15px;
+.left-column .el {
+  margin: 0 15px;
   color: grey;
 }
 
@@ -120,9 +129,4 @@
   background-color: var(--primary-color);
   color: white;
   font-weight: bold;
-}
-.button {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: start;
 }
